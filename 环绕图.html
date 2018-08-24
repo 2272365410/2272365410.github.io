@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			body{
+
+				perspective: 2000px;
+			}
+			.box{
+				width: 160px;
+				height: 160px;
+				position: relative;
+				margin: 200px auto;
+				transform-style:preserve-3d;
+				/*transform: rotateX(30deg);*/
+				animation: zhuan 3s linear 0s infinite;
+			}
+			.box div{
+				width: 150px;
+				height: 150px;
+				position: absolute;
+				opacity: 0.7;
+				border: 3px solid gold;
+				left: 0;
+				top:0;
+			}
+			@-webkit-keyframes zhuan{
+				from{
+					transform: rotateZ(0deg);
+				}to{
+					transform: rotateZ(360deg);
+				}
+			}
+			.box div:nth-child(1){
+				transform: rotateY(40deg) translateZ(220px);
+				background-color: red;
+			}
+			.box div:nth-child(2){
+				transform: rotateY(80deg) translateZ(220px);
+				background-color: coral;
+			}
+			.box div:nth-child(3){
+				transform: rotateY(120deg) translateZ(220px);
+				background-color: #BCE8F1;
+			}
+			.box div:nth-child(4){
+				transform: rotateY(160deg) translateZ(220px);
+				background-color: honeydew;
+			}
+			.box div:nth-child(5){
+				transform: rotateY(200deg) translateZ(220px);
+				background-color: greenyellow;
+			}
+			.box div:nth-child(6){
+				transform: rotateY(240deg) translateZ(220px);
+				background-color: cornflowerblue;
+			}
+			.box div:nth-child(7){
+				transform: rotateY(280deg) translateZ(220px);
+				background-color: salmon;
+			}
+			.box div:nth-child(8){
+				transform: rotateY(320deg) translateZ(220px);
+				background-color: turquoise;
+			}
+			.box div:nth-child(9){
+				transform: rotateY(360deg) translateZ(220px);
+				background-color: yellow;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+	</body>
+	<script>
+		// r = 80/Math.tan(20/180*Math.PI);
+		// 80:围绕元素宽的一半 20:围绕元素度数的一半
+		// console.log(r);
+	</script>
+<html>
