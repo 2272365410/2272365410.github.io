@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			div{
+				width: 50px;
+				height: 50px;
+				background-color: orange;
+				position: absolute;
+				left: 50px;
+				top: 50px;
+				/*transition: 能够实现动画,不过这个动画需要触发条件,比如css改变,类名的改变,hover,js触发;*/
+				/*animation: 可以让动画更自由;*/
+				animation: xyy 3s linear 0s;
+			}
+			@-webkit-keyframes xyy{
+				from{
+					left: 50px;
+				}
+				to{
+					left: 500px;
+				}
+			}
+			/*定义动画
+			@-webkit-keyframes 动画名称{
+				from{
+					A状态
+				}
+				to{
+					B状态
+				}
+				0%{
+					
+				}
+				100%{
+					
+				}
+			}*/
+			animation 八个参数：
+			     1. animation-name:动画的名称
+			     2. animation-duration:动画持续时长
+			     3. animation-timing-function:定义动画的速率
+			         ease ease-in ease-out ease-in-out 贝塞尔曲线
+			     4. animation-delay:延迟时间
+			     5. animation-iteration-count:动画的播放次数  1,2,3,4,5...infinite 无限
+			     6. animation-direction:播放的方向
+			        normal：一直向前播放，等到最后一帧会回到第一帧
+			        reverse：跟normal方向相反
+			        alternate：往复播放
+			        alternate-reverse：跟alternate反向
+			     7. animation-fill-mode
+			        none:默认 不设置
+			        forwards:动画播放完毕回到第一帧的状态
+			        both：动画播放完毕后会回到结束或开始状态，结束状态优先。
+			     8. animation-play-state:控制动画播放
+			        paused:暂停
+			        running：启动继续播放
+
+                 
+		</style>
+	</head>
+	<body>
+		<div></div>
+	</body>
+<ml>
